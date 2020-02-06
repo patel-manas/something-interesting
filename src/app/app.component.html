@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <textarea
+    cols="25"
+    [ngModel]="data"
+    (ngModelChange)="doSomething($event)"
+  ></textarea>
+  <button (click)="generateHtml()">Generate</button>
+  <div>raw: {{rawhtml}}</div>
+  <div [innerHtml]="content" [ngStyle]="base_style">place holder</div>
+</div>
